@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/frontend/Projeto/fotos/note.png" type="image/x-icon">
+  <title>Prática de bandas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/frontend/Projeto/css/gerenciarMusicas.css">
+</head>
+
+<body class="gerenciarMusicas">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/frontend/Projeto/fotos/senac.png" alt="senac" width="80"
+          height="80"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown fs-5">
+            <a class="nav-link dropdown-toggle" href="selecao.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Prática de bandas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="listagem.html?genero=Rock">Rock</a></li>
+              <li><a class="dropdown-item" href="listagem.html?genero=Pop">Pop</a></li>
+              <li><a class="dropdown-item" href="listagem.html?genero=Black">Black</a></li>
+              <li><a class="dropdown-item" href="listagem.html?genero=Sertanejo">Sertanejo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" aria-current="page" href="saibaMais.html">Saiba Mais</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-primary" href="#" onclick="logout()">Sair</a>
+    </div>
+  </nav>
+
+  <div class="container d-flex align-items-center justify-content-center flex-grow-1">
+    <div class="card shadow">
+      <h3 class="text-center mb-4">
+        <span class="me-2">🎵</span><strong>Gerenciador de Músicas</strong>
+      </h3>
+
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Identificação Numérica:</label>
+          <input type="text" class="form-control" id="idMusica" placeholder="Digite o ID">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Título:</label>
+          <input type="text" class="form-control" placeholder="Digite o título da música">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Banda:</label>
+          <input type="text" class="form-control" placeholder="Digite a banda ou artista">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Tom:</label>
+          <input type="text" class="form-control" placeholder="Ex: C, D#, F#m">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Gênero:</label>
+          <select class="form-select">
+            <option>Rock</option>
+            <option>Pop</option>
+            <option>Sertanejo</option>
+            <option>Black</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Semestre Iniciado:</label>
+          <input type="text" class="form-control" placeholder="Ex: 2025.2">
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label">URL:</label>
+          <input type="url" class="form-control" placeholder="https://exemplo.com">
+        </div>
+
+        <div class="d-flex justify-content-center gap-3">
+          <button type="submit" class="btn btn-cadastrar px-4">Cadastrar</button>
+          <button type="button" class="btn btn-excluir px-4">Excluir</button>
+          <button type="button" class="btn btn-voltar px-4">Voltar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="d-flex align-items-center justify-content-center">
+    <div>
+      <a href="https://x.com/"><img src="/frontend/Projeto/fotos/X Logo.png" width="24" height="24"></a>
+      <a href="https://www.instagram.com/"><img src="/frontend/Projeto/fotos/Logo Instagram.png" width="24"
+          height="24"></a>
+      <a href="https://www.youtube.com/"><img src="/frontend/Projeto/fotos/Logo YouTube.png" width="24" height="24"></a>
+      <a href="https://br.linkedin.com/"><img src="/frontend/Projeto/fotos/LinkedIn.png" width="24" height="24"></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/gerenciarMusicas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/frontend/Projeto/fotos/note.png" type="image/x-icon">
+  <title>Prática de bandas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/frontend/Projeto/css/listagem.css">
+</head>
+
+<body class="listagem d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/frontend/Projeto/fotos/senac.png" alt="senac" width="80"
+          height="80"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown fs-5">
+            <a class="nav-link dropdown-toggle" href="selecao.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Prática de bandas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="listagem.html?genero=Rock">Rock</a></li>
+              <li><a class="dropdown-item" href="listagem.html?genero=Pop">Pop</a></li>
+              <li><a class="dropdown-item" href="listagem.html?genero=Black">Black</a></li>
+              <li><a class="dropdown-item" href="listagem.html?genero=Sertanejo">Sertanejo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" aria-current="page" href="saibaMais.html">Saiba Mais</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-primary" href="#" onclick="logout()">Sair</a>
+    </div>
+  </nav>
+
+  <main class="container flex-grow-1 d-flex align-items-center justify-content-center py-5">
+    <div class="card card-listagem shadow-lg p-5 text-center" style="max-width: 900px; width: 100%;">
+      <h2 class="fw-bold mb-4" id="tituloGenero">Prática de Músicas</h2>
+
+      <div class="mb-4 text-start">
+        <label for="pesquisa" class="form-label fw-semibold">Pesquisar uma música:</label>
+        <input type="text" id="pesquisa" class="form-control" placeholder="Digite o nome da música">
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+          <thead>
+            <tr class="text-white text-center">
+              <th>ID</th>
+              <th>Título</th>
+              <th>Banda</th>
+              <th>Tom</th>
+              <th>Gênero</th>
+              <th>Semestre</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7" class="text-center text-muted">Nenhuma música cadastrada</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="selecao.html" class="btn btn-voltar px-4">Voltar</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="d-flex align-items-center justify-content-center">
+    <div>
+      <a href="https://x.com/"><img src="/frontend/Projeto/fotos/X Logo.png" width="24" height="24"></a>
+      <a href="https://www.instagram.com/"><img src="/frontend/Projeto/fotos/Logo Instagram.png" width="24"
+          height="24"></a>
+      <a href="https://www.youtube.com/"><img src="/frontend/Projeto/fotos/Logo YouTube.png" width="24" height="24"></a>
+      <a href="https://br.linkedin.com/"><img src="/frontend/Projeto/fotos/LinkedIn.png" width="24" height="24"></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/listagem.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+body.listagem {
+  background: linear-gradient(90deg, #8C25B4, #3D104E);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.perfil-circle {
+  width: 45px;
+  height: 45px;
+  font-weight: 600;
+}
+
+.card-listagem {
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.card-listagem h2 {
+  color: #000;
+}
+
+#pesquisa {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.table thead th {
+  background-color: #8C25B4 !important;
+  color: white !important;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.btn-voltar {
+  background-color: #6c757d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #3D104E;
+  color: #fff;
+}
+
+footer {
+  background: linear-gradient(90deg, #8C25B4, #3D104E);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  height: 80px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  color: #000000 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .dropdown-toggle.active,
+.navbar .nav-link.show,
+.navbar .dropdown-toggle.show {
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+  color: #8C25B4 !important;
+}
+
+.dropdown-menu {
+  background-color: #fff !important;
+  border: 1px solid #ddd;
+}
+
+.dropdown-item {
+  color: #000000 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #8C25B4 !important;
+  color: #ffffff !important;
+}
+
+
+.btn-warning {
+  border: 2px solid #8C25B4;
+  width: 300px;
+  height: 50px;
+  background-color: #8C25B4;
+  color: white;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 12px 12px;
+  align-content: center;
+  margin-right: 10px;
+}
+
+.btn-warning:hover {
+  border: 2px solid #3D104E;
+  background-color: #3D104E;
+}
+
+
+.btn-primary {
+  border: 2px solid #8C25B4;
+  width: 130px;
+  height: 60px;
+  background-color: #8C25B4;
+  color: white;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 12px 12px;
+  align-content: center;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  border: 2px solid #3D104E;
+  background-color: #3D104E;
+}

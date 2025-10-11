@@ -1,0 +1,129 @@
+body.gerenciarMusicas {
+  background: linear-gradient(90deg, #8C25B4, #3D104E);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gerenciarMusicas .navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.gerenciarMusicas .perfil-circle {
+  width: 40px;
+  height: 40px;
+}
+
+.gerenciarMusicas .card {
+  width: 100%;
+  max-width: 650px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px 50px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+  margin: 80px 0;
+}
+
+.gerenciarMusicas .form-label {
+  font-weight: 500;
+}
+
+.gerenciarMusicas .btn-cadastrar {
+  background-color: #198754;
+  color: white;
+}
+
+.gerenciarMusicas .btn-excluir {
+  background-color: #dc3545;
+  color: white;
+}
+
+.gerenciarMusicas .btn-voltar {
+  background-color: #6c757d;
+  color: white;
+}
+
+.gerenciarMusicas .btn-cadastrar:hover,
+.gerenciarMusicas .btn-excluir:hover,
+.gerenciarMusicas .btn-voltar:hover {
+  opacity: 0.9;
+}
+
+.container {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gerenciarMusicas .footer-icons {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: auto;
+}
+
+.gerenciarMusicas .footer-icons img {
+  width: 20px;
+  margin: 0 5px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.gerenciarMusicas .footer-icons img:hover {
+  opacity: 1;
+}
+
+footer {
+  background: linear-gradient(90deg, #8C25B4, #3D104E);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  height: 80px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  color: #000000 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .dropdown-toggle.active,
+.navbar .nav-link.show,
+.navbar .dropdown-toggle.show {
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+  color: #8C25B4 !important;
+}
+
+.btn-primary {
+  border: 2px solid #8C25B4;
+  width: 130px;
+  height: 60px;
+  background-color: #8C25B4;
+  color: white;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 12px 12px;
+  align-content: center;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  border: 2px solid #3D104E;
+  background-color: #3D104E;
+}

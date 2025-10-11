@@ -1,0 +1,91 @@
+.navbar {
+  height: 10vh;
+}
+
+.login-container {
+  display: flex;
+  height: 90vh;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.login-box {
+  max-width: 500px;
+  width: 100%;
+}
+
+.login-box h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-login {
+  background-color: #8C25B4;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #3D104E;
+  color: #fff;
+}
+
+.login-right {
+  flex: 1;
+  background: linear-gradient(90deg, #8C25B4, #3D104E);
+}
+
+.form-check-input:checked {
+  background-color: #8C25B4;
+  border-color: #8C25B4;
+}
+
+.text-purple {
+  color: #8C25B4;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.text-purple:hover {
+  text-decoration: underline;
+}
+
+.navbar .nav-link {
+  color: #000000 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link.show {
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+  color: #8C25B4 !important;
+}
