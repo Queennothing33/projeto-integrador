@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/frontend/Projeto/fotos/note.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/fotos/note.png" type="image/x-icon">
   <title>Prática de bandas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="/frontend/Projeto/css/selecao.css">
+  <link rel="stylesheet" href="/css/selecao.css">
 </head>
 
 <body class="selecao d-flex flex-column min-vh-100">
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="/frontend/Projeto/fotos/senac.png" alt="senac" width="80"
+      <a class="navbar-brand" href="#"><img src="/fotos/senac.png" alt="senac" width="80"
           height="80"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
     <div class="row justify-content-center mt-4 g-4">
       <div class="col-md-3">
         <div class="card h-100">
-          <img src="/frontend/Projeto/fotos/rock.png" class="card-img-top" alt="Rock">
+          <img src="/fotos/rock.png" class="card-img-top" alt="Rock">
           <div class="card-footer">
             <button class="btn btn-card" onclick="location.href='listagem.html?genero=Rock'">
               <h5 class="mb-1">Rock</h5>
@@ -63,7 +63,7 @@
 
       <div class="col-md-3">
         <div class="card h-100">
-          <img src="/frontend/Projeto/fotos/pop.png" class="card-img-top" alt="Pop">
+          <img src="/fotos/pop.png" class="card-img-top" alt="Pop">
           <div class="card-footer">
             <button class="btn btn-card" onclick="location.href='listagem.html?genero=Pop'">
               <h5 class="mb-1">Pop</h5>
@@ -75,7 +75,7 @@
 
       <div class="col-md-3">
         <div class="card h-100">
-          <img src="/frontend/Projeto/fotos/black.png" class="card-img-top" alt="Black Music">
+          <img src="/fotos/black.png" class="card-img-top" alt="Black Music">
           <div class="card-footer">
             <button class="btn btn-card" onclick="location.href='listagem.html?genero=Black'">
               <h5 class="mb-1">Black Music</h5>
@@ -87,7 +87,7 @@
 
       <div class="col-md-3">
         <div class="card h-100">
-          <img src="/frontend/Projeto/fotos/sertanejo.png" class="card-img-top" alt="Sertanejo">
+          <img src="/fotos/sertanejo.png" class="card-img-top" alt="Sertanejo">
           <div class="card-footer">
             <button class="btn btn-card" onclick="location.href='listagem.html?genero=Sertanejo'">
               <h5 class="mb-1">Sertanejo</h5>
@@ -106,27 +106,25 @@
 
   <footer class="mt-auto d-flex align-items-center justify-content-center">
     <div>
-      <a href="https://x.com/"><img src="/frontend/Projeto/fotos/X Logo.png" width="24" height="24"></a>
-      <a href="https://www.instagram.com/"><img src="/frontend/Projeto/fotos/Logo Instagram.png" width="24"
+      <a href="https://x.com/"><img src="/fotos/X Logo.png" width="24" height="24"></a>
+      <a href="https://www.instagram.com/"><img src="/fotos/Logo Instagram.png" width="24"
           height="24"></a>
-      <a href="https://www.youtube.com/"><img src="/frontend/Projeto/fotos/Logo YouTube.png" width="24" height="24"></a>
-      <a href="https://br.linkedin.com/"><img src="/frontend/Projeto/fotos/LinkedIn.png" width="24" height="24"></a>
+      <a href="https://www.youtube.com/"><img src="/fotos/Logo YouTube.png" width="24" height="24"></a>
+      <a href="https://br.linkedin.com/"><img src="/fotos/LinkedIn.png" width="24" height="24"></a>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/selecao.js"></script>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/selecao.js"></script>
   <script>
     function setOrigem(origem) {
       sessionStorage.setItem("origemSaibaMais", origem);
     }
-  </script> <!-- ou listagem.js / gerenciarMusicas.js -->
-
-
-
+  </script> 
+  
 </body>
 
 </html>
